@@ -1,0 +1,1 @@
+Täältä löytyy WS02 harjoitus
