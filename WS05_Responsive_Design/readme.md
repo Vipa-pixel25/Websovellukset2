@@ -1,0 +1,1 @@
+Täältä löytyy WS05 harjoitus
