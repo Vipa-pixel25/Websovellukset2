@@ -10,3 +10,5 @@ WS04_Page_Layout
 
 WS05_Responsive_Design
 
+WS06_Bootstrap
+
