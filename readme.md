@@ -12,3 +12,4 @@ WS05_Responsive_Design
 
 WS06_Bootstrap
 
+Nämä tehtävät on tehty
