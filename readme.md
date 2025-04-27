@@ -7,3 +7,6 @@ WS02_CSS
 WS03_Advanced_CSS
 
 WS04_Page_Layout
+
+WS05_Responsive_Design
+
