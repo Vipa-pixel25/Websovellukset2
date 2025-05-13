@@ -5,7 +5,6 @@
     background-color: rgb(248, 242, 242); /* Valitse haluamasi väri */
     display: flex; /* Asettaa elementit rinnakkain */
     align-items: center; /* Kohdistaa pystysuunnassa keskelle */
-    padding: 20px; /* Lisää tilaa elementtien ympärille */
   }
   
   .logo {
@@ -18,7 +17,10 @@
   
   .title, .navbar {
     position: absolute;
-    width: 30%;
+    top: 0; /* Centers vertically */
+    height: 50px; /* Adjust height if needed */
+    padding: 5px 10px; /* Adjust padding if needed */
+    width: 40%;
     text-align: center;
     font-size: 50px; /* Otsikon tekstin koko */
     color: black; /* Valitse tekstin väri */
@@ -32,12 +34,13 @@
     font-weight: bold;
   }
   .navbar {
-    top: 5px; /* Adjust position if needed */
+    position: absolute;
+    top: -100px; /* Adjust position if needed */
     height: 50px; /* Säädä korkeutta */
     padding: 5px 10px; /* Vähennä ylä- ja alareunan tilaa */
   }
   .navbar-nav .nav-link {
-    font-size: 14px; /* Muuta fonttikokoa */
+    font-size: 18px; /* Muuta fonttikokoa */
     padding: 5px 8px; /* Tee painikkeet kompaktimmiksi */
   }
   .navbar-brand img {
@@ -51,7 +54,7 @@ p {
     color: rgb(4, 4, 7);
 }
 body {
-    background-color: rgb(73, 149, 124);
+    background-color: rgb(49, 50, 49);
 }
 
 
@@ -81,18 +84,19 @@ input[type="text"], input[type="email"] {
     
     text-align: center; /* Kohdistaa tekstin keskelle vaakasuunnassa */
     flex-grow: 1; /* Vie jäljellä olevan tilan */
-    padding: 20px; /* Lisää tilaa ylhäältä ja alhaalta */
+    padding: 10px; /* Lisää tilaa ylhäältä ja alhaalta */
   }
   
   .centered-text {
     text-align: center; /* Keskittää tekstin vaakasuunnassa */
     position: relative; /* Tarvitaan alleviivauksen sijoittamiseksi */
+    padding: 20px; /* Lisää tilaa ylhäältä ja alhaalta */
   }
   
   .centered-text p {
     font-size: 26px; /* Tekstin koko */
     margin: 0; /* Poistaa ylimääräiset marginaalit */
-    padding-bottom: 20px; /* Lisää tilaa tekstin ja alleviivauksen väliin */
+    padding-bottom: 20px; /* Lisää tilaa tekstin ja alleviivauksen väliin */;
   }
   .centered-text p::after {
     content: ""; /* Luo "näkymättömän" elementin */
@@ -110,7 +114,6 @@ input[type="text"], input[type="email"] {
     height: 2px; /* Alleviivauksen korkeus */
     background-color: black; /* Alleviivauksen väri */
     margin: 10px auto 0; /* Keskittää alleviivauksen */
-   
   }
   .custom-navbar {
     background-color: rgb(248, 242, 242); /* Change to any color */
