@@ -42,7 +42,11 @@
   .navbar-nav .nav-link {
     font-size: 18px; /* Muuta fonttikokoa */
     padding: 5px 8px; /* Tee painikkeet kompaktimmiksi */
+    color:darkkhaki
   }
+  .navbar-nav .nav-link.active {
+    color: darkkhaki /* Use the same color as other links */
+}
   .navbar-brand img {
     width: 80px; /* Pienempi logo */
     height: auto; /* Säilyttää kuvasuhteen */
