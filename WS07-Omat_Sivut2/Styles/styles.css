@@ -2,11 +2,16 @@
     position: relative;
     width: 100%; /* Makes it span the full screen width */
     height: 300px; /* Adjust height as needed */
-    background-color: rgb(248, 242, 242); /* Valitse haluamasi väri */
+    background-color: rgb(182, 134, 39); /* Valitse haluamasi väri */
     display: flex; /* Asettaa elementit rinnakkain */
     align-items: center; /* Kohdistaa pystysuunnassa keskelle */
   }
-  
+  footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
   .logo {
     position: absolute;
     width: 100%; /* Ensures image spans full width */
@@ -23,7 +28,7 @@
     width: 40%;
     text-align: center;
     font-size: 50px; /* Otsikon tekstin koko */
-    color: black; /* Valitse tekstin väri */
+    color: rgb(39, 42, 183); /* Valitse tekstin väri */
     margin: 0; /* Poistaa ylimääräiset marginaalit */
   }
   .title {
@@ -47,18 +52,48 @@
   .navbar-nav .nav-link.active {
     color: darkkhaki /* Use the same color as other links */
 }
+.nav-link.active {
+  color: #ff6600; /* Korostettu väri aktiiviselle linkille */
+  font-weight: bold;
+}
   .navbar-brand img {
     width: 80px; /* Pienempi logo */
     height: auto; /* Säilyttää kuvasuhteen */
   }
   
-  
+  .btn:hover {
+  background-color: #0056b3; /* Tummempi sininen hover-tilassa */
+  color: #fff;
+  transform: scale(1.05); /* Suurentaa hieman */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Nostaa korttia hieman */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lisää varjoa */
+  transition: transform 0.3s ease;
+}
   
 p {
     color: rgb(4, 4, 7);
+    margin-bottom: 15px; /* Lisää tilaa kappaleiden väliin */
+    font-size: 1.1rem; /* Lisää luettavuutta */
+    line-height: 1.6; /* Lisää riviväliä */
+}
+.col-sm-4 p {
+  margin-top: 0;
+  margin-bottom: 4%;
+  padding: 10px;
+}
+.col-sm-4 {
+  border: 1px solid #ccc; /* Harmaa viiva */
+  background-color: #f9f9f9; /* Vaaleanharmaa tausta */
+  padding: 10px; /* Lisää sisäistä tilaa */
+  border-radius: 5px; /* Pyöristetyt kulmat (valinnainen) */
 }
 body {
-    background-color: rgb(49, 50, 49);
+    background-color: #f8f9fa; /* Vaalea tausta */
+    color: #333; /* Tumma teksti */
+    font-size: 1.1rem; /* Lisää luettavuutta */
 }
 
 
@@ -90,6 +125,18 @@ input[type="text"], input[type="email"] {
     flex-grow: 1; /* Vie jäljellä olevan tilan */
     padding: 10px; /* Lisää tilaa ylhäältä ja alhaalta */
   }
+  h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1, h5 {
+  color: #003366; /* Tumma sininen otsikoille */
+  font-family: 'Roboto', sans-serif; /* Käytä yhtenäistä fonttia */
+  margin-bottom: 20px; /* Lisää väliä otsikoiden alle */
+}
+a {
+  color: #ff6600; /* Oranssi linkeille */
+}
   
   .centered-text {
     text-align: center; /* Keskittää tekstin vaakasuunnassa */
@@ -117,12 +164,15 @@ input[type="text"], input[type="email"] {
     width: 60%; /* Alleviivauksen leveys (voit muuttaa tätä) */
     height: 2px; /* Alleviivauksen korkeus */
     background-color: black; /* Alleviivauksen väri */
-    margin: 10px auto 0; /* Keskittää alleviivauksen */
+    margin: -20px auto 0; /* Keskittää alleviivauksen */
   }
   .custom-navbar {
-    background-color: rgb(248, 242, 242); /* Change to any color */
+    background-color: #343a40; /* Tumma tausta */
   }
-
+.container px-4 text-center {
+    padding: 2px;
+    text-align: center;
+}
 
 nav a {
     color: white;
@@ -144,29 +194,67 @@ nav a {
     padding-right: 15px;
     padding-top: 15px;
   }
-  
+ 
+  .card-body {
+  flex-grow: 1; /* Sallii sisällön venyä */
+  display: flex;
+  flex-direction: column;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /* Rajoittaa kuvan korkeutta */
+}
   .card img {
     width: 100%;
     max-width: 100%; /* Korjattu: kuva ei saa ylittää kortin leveyttä */
-    height: 100%;
+    height: auto; /* Korjattu: kuva ei saa ylittää kortin korkeutta */
+    margin: 0 auto; /* Keskittää kuvan vaakasuunnassa */
     object-fit: cover; /* Täyttää kortin ilman vääristymistä */
   }
+  @media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px;
+    margin-left: 0; /* Poistaa ylimääräisen marginaalin mobiilinäytöillä */
+    margin-right: 0; /* Poistaa ylimääräisen marginaalin mobiilinäytöillä */
+  }
+}
   
   .card {
     position: relative;
     overflow: hidden; /* Piilottaa ylimenevän sisällön */
     max-width: 600px; /* Korjattu: kortin leveys ei saa ylittää 300px */
+    max-height: 600px; /* Korjattu: kortin korkeus ei saa ylittää 300px */
     display: flex;
     flex-direction: column;
+    border-radius: 10px; /* Pyöristetyt kulmat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjo */
+  margin-left: 200px; /* Keskittää kortin vaakasuunnassa */
+  margin-right: 0; /* Keskittää kortin vaakasuunnassa */
   }
   .card-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
   .card-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white; /* Muuta tekstin väri valkoiseksi */
+    height: 100%; /* Varmistaa, että teksti ei ylitä kortin korkeutta */
   }
+  @media (max-width: 576px) {
+  .card-text {
+    font-size: 0.9rem; /* Pienempi fonttikoko mobiilinäytöille */
+  }
+}
+.btn {
+  font-size: 0.8rem; /* Oletuskoko */
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 0.8rem; /* Pienempi fonttikoko mobiilinäytöille */
+    padding: 0.4rem 0.8rem; /* Pienemmät marginaalit */
+  }
+}
  
   .card-img-overlay {
     position: absolute;
@@ -183,40 +271,71 @@ nav a {
     display: flex;
     flex-direction: column;
   }
+.btn:hover {
+  background-color: #0056b3; /* Tummempi sävy hover-tilassa */
+  transform: scale(1.05); /* Suurentaa hieman */
+  transition: all 0.3s ease; /* Lisää animaatio */
+}
+
+
+.card:hover {
+  transform: scale(1.05); /* Suurentaa korttia hieman hover-tilassa */
+  transition: transform 0.3s ease;
+}
   
   .inner-div {
     width: 100%;
     max-width: 100%; /* Korjattu: sisä-div ei saa ylittää kortin leveyttä */
   }
 
+
 /* Otsikon väri */
 .carousel-caption h5 {
   color: rgb(150, 218, 152);
+  font-size: 1.25rem; /* Pienempi fonttikoko mobiilinäytöille */
 }
-
+.carousel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /* Tekstin väri */
 .carousel-caption p {
   color: rgb(158, 219, 166);
+  font-size: 0.9rem; /* Pienennä tekstin kokoa */
 }
-
-/* Yleisesti kaiken tekstin väri */
-.carousel-caption {
-  color: rgb(168, 85, 85); /* Jos haluat oletusvärin koko kuvatekstille */
-}
-/* styles.css */
 
 .carousel-caption {
   background-color: rgba(59, 58, 58, 0.7); /* Tummempi läpinäkyvä musta */
+  padding: 6rem; /* Lisää paddingia joka suuntaan */
+  color: rgb(168, 85, 85); /* Jos haluat oletusvärin koko kuvatekstille */
   /* Tai kokonaan läpinäkymätön väri: */
   /* background-color: navy; */
 }
-.carousel-caption {
-  padding: 6rem; /* Lisää paddingia joka suuntaan */
-  /* Voit säätää paddingia erikseen eri sivuille: */
-  /* padding-top: 4rem; */
-  /* padding-bottom: 3rem; */
-  /* padding-left: 2rem; */
-  /* padding-right: 2rem; */
+
+.carousel-inner img {
+  height: 500px; /* Skaalaa korkeus automaattisesti leveyden mukaan */
+  max-height: 500px; /* Valinnainen: rajoittaa kuvan korkeutta */
+  object-fit: cover; /* Täyttää kuvan ilman vääristymistä */
+  width: 100%; /* Skaalaa leveys automaattisesti korkeuden mukaan */
+  border-radius: 10px; /* Pyöristetyt kulmat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lisää varjo */
+}
+#lopetus-kuva {
+  height: 500px; /* Asettaa kuvan korkeuden */
+  object-fit: cover; /* Skaalaa kuva täyttämään alueen */
+}
+@media (max-width: 768px) {
+  #lopetus-kuva {
+    height: 300px; /* Pienempi korkeus mobiilinäytöille */
+  }
+}
+ul {
+  font-size: 0.8rem; /* Muuttaa fonttikoon */
+}
+@media (max-width: 768px) {
+  ul {
+    font-size: 0.5rem; /* Pienempi fontti mobiilinäytöille */
+  }
 }
 .row.gx-5 .col .row > .col-md-3 {
   font-weight: bold; /* Tehdään otsikkotekstit lihavoiduiksi */
@@ -234,8 +353,22 @@ nav a {
   width: 150px; /* Määritetään avainsanoille kiinteä leveys (säädä tarpeen mukaan) */
   margin-right: 0.5rem; /* Lisätään tilaa avainsanan ja selityksen väliin */
 }
+.container {
+  padding: 80px 120px;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem; /* Pienennä otsikon kokoa mobiilinäytöillä */
+  }
 
+  p {
+    font-size: 1rem; /* Pienennä tekstin kokoa mobiilinäytöillä */
+  }
 
+  .carousel-inner img {
+    height: 200px; /* Rajoita karusellin kuvien korkeutta mobiilinäytöillä */
+  }
+}
 
 
 
