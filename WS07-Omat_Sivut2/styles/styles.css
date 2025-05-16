@@ -11,6 +11,7 @@
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  height: 50px
 }
   .logo {
     position: absolute;
@@ -74,10 +75,11 @@
 }
   
 p {
-    color: rgb(4, 4, 7);
+    color: rgb(13, 13, 14);
     margin-bottom: 15px; /* Lisää tilaa kappaleiden väliin */
     font-size: 1.1rem; /* Lisää luettavuutta */
     line-height: 1.6; /* Lisää riviväliä */
+    padding-top: 2px; /* Lisää sisäistä tilaa */
 }
 .col-sm-4 p {
   margin-top: 0;
@@ -145,7 +147,7 @@ a {
   }
   
   .centered-text p {
-    font-size: 26px; /* Tekstin koko */
+    font-size: 20px; /* Tekstin koko */
     margin: 0; /* Poistaa ylimääräiset marginaalit */
     padding-bottom: 20px; /* Lisää tilaa tekstin ja alleviivauksen väliin */;
   }
@@ -239,7 +241,7 @@ nav a {
 
   .card-text {
     font-size: 0.9rem;
-    color: white; /* Muuta tekstin väri valkoiseksi */
+    color: rgb(248, 245, 245); /* Muuta tekstin väri valkoiseksi */
     height: 100%; /* Varmistaa, että teksti ei ylitä kortin korkeutta */
   }
 
@@ -255,6 +257,18 @@ nav a {
 
 .custom-card .card-title {
   color: #00ff00; /* Vihreä otsikko */
+  font-size: 2rem; /* Suurempi fonttikoko */
+}
+.custom-card p {
+  font-size: 0.9rem; /* Suurempi fonttikoko */
+  color: #f8f5f5; /* Musta teksti */
+}
+
+.small-card-img {
+  width: 50%;      /* pienempi leveys */
+  height: 100px;    /* säilyttää kuvasuhteen */
+  margin: 0 auto;  /* keskittää kuvan kortissa */
+  display: block;
 }
 .btn {
   font-size: 0.8rem; /* Oletuskoko */
