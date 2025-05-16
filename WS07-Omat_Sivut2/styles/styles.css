@@ -93,9 +93,10 @@ p {
   border-radius: 5px; /* Pyöristetyt kulmat (valinnainen) */
 }
 body {
-    background-color: #f8f9fa; /* Vaalea tausta */
+    background-color: #2f4e6e; /* Vaihda haluamaksesi */
     color: #333; /* Tumma teksti */
     font-size: 1.1rem; /* Lisää luettavuutta */
+    font-family: "Roboto", sans-serif; /* Käytä yhtenäistä fonttia */
 }
 
 
@@ -230,7 +231,7 @@ nav a {
     flex-direction: column;
     border-radius: 10px; /* Pyöristetyt kulmat */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjo */
-  margin-left: 200px; /* Keskittää kortin vaakasuunnassa */
+  margin-left: 100px; /* Keskittää kortin vaakasuunnassa */
   margin-right: 0; /* Keskittää kortin vaakasuunnassa */
   }
   
@@ -252,7 +253,7 @@ nav a {
 }
 
 .custom-card .card-text {
-  color: #ff6600; /* Oranssi teksti */
+  color: #fffefe; /* Oranssi teksti */
 }
 
 .custom-card .card-title {
