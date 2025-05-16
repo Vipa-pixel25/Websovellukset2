@@ -1,68 +1,69 @@
 .header {
-    position: relative;
-    width: 100%; /* Makes it span the full screen width */
-    height: 300px; /* Adjust height as needed */
-    background-color: rgb(182, 134, 39); /* Valitse haluamasi väri */
-    display: flex; /* Asettaa elementit rinnakkain */
-    align-items: center; /* Kohdistaa pystysuunnassa keskelle */
-  }
-  footer {
+  position: relative;
+  width: 100%; /* Makes it span the full screen width */
+  height: 300px; /* Adjust height as needed */
+  background-color: rgb(182, 134, 39); /* Valitse haluamasi väri */
+  display: flex; /* Asettaa elementit rinnakkain */
+  align-items: center; /* Kohdistaa pystysuunnassa keskelle */
+}
+footer {
   background-color: #343a40;
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  height: 50px
+  height: 50px;
 }
-  .logo {
-    position: absolute;
-    width: 100%; /* Ensures image spans full width */
-    height: 100%;
-    object-fit: cover; /* Scales image without distortion */
-    margin-right: 20px; /* Lisää tilaa logon ja otsikon väliin */
-  }
-  
-  .title, .navbar {
-    position: absolute;
-    top: 0; /* Centers vertically */
-    height: 50px; /* Adjust height if needed */
-    padding: 5px 10px; /* Adjust padding if needed */
-    width: 40%;
-    text-align: center;
-    font-size: 50px; /* Otsikon tekstin koko */
-    color: rgb(39, 42, 183); /* Valitse tekstin väri */
-    margin: 0; /* Poistaa ylimääräiset marginaalit */
-  }
-  .title {
-    top: 50%; /* Centers vertically */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
-    font-weight: bold;
-  }
-  .navbar {
-    position: absolute;
-    top: -100px; /* Adjust position if needed */
-    height: 50px; /* Säädä korkeutta */
-    padding: 5px 10px; /* Vähennä ylä- ja alareunan tilaa */
-  }
-  .navbar-nav .nav-link {
-    font-size: 18px; /* Muuta fonttikokoa */
-    padding: 5px 8px; /* Tee painikkeet kompaktimmiksi */
-    color:darkkhaki
-  }
-  .navbar-nav .nav-link.active {
-    color: darkkhaki /* Use the same color as other links */
+.logo {
+  position: absolute;
+  width: 100%; /* Ensures image spans full width */
+  height: 100%;
+  object-fit: cover; /* Scales image without distortion */
+  margin-right: 20px; /* Lisää tilaa logon ja otsikon väliin */
+}
+
+.title,
+.navbar {
+  position: absolute;
+  top: 0; /* Centers vertically */
+  height: 50px; /* Adjust height if needed */
+  padding: 5px 10px; /* Adjust padding if needed */
+  width: 40%;
+  text-align: center;
+  font-size: 50px; /* Otsikon tekstin koko */
+  color: rgb(39, 42, 183); /* Valitse tekstin väri */
+  margin: 0; /* Poistaa ylimääräiset marginaalit */
+}
+.title {
+  top: 50%; /* Centers vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+}
+.navbar {
+  position: absolute;
+  top: -100px; /* Adjust position if needed */
+  height: 50px; /* Säädä korkeutta */
+  padding: 5px 10px; /* Vähennä ylä- ja alareunan tilaa */
+}
+.navbar-nav .nav-link {
+  font-size: 18px; /* Muuta fonttikokoa */
+  padding: 5px 8px; /* Tee painikkeet kompaktimmiksi */
+  color: darkkhaki;
+}
+.navbar-nav .nav-link.active {
+  color: darkkhaki; /* Use the same color as other links */
 }
 .nav-link.active {
   color: #ff6600; /* Korostettu väri aktiiviselle linkille */
   font-weight: bold;
 }
-  .navbar-brand img {
-    width: 80px; /* Pienempi logo */
-    height: auto; /* Säilyttää kuvasuhteen */
-  }
-  
-  .btn:hover {
+.navbar-brand img {
+  width: 80px; /* Pienempi logo */
+  height: auto; /* Säilyttää kuvasuhteen */
+}
+
+.btn:hover {
   background-color: #0056b3; /* Tummempi sininen hover-tilassa */
   color: #fff;
   transform: scale(1.05); /* Suurentaa hieman */
@@ -73,13 +74,13 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lisää varjoa */
   transition: transform 0.3s ease;
 }
-  
+
 p {
-    color: rgb(13, 13, 14);
-    margin-bottom: 15px; /* Lisää tilaa kappaleiden väliin */
-    font-size: 1.1rem; /* Lisää luettavuutta */
-    line-height: 1.6; /* Lisää riviväliä */
-    padding-top: 2px; /* Lisää sisäistä tilaa */
+  color: rgb(13, 13, 14);
+  margin-bottom: 15px; /* Lisää tilaa kappaleiden väliin */
+  font-size: 1.1rem; /* Lisää luettavuutta */
+  line-height: 1.6; /* Lisää riviväliä */
+  padding-top: 2px; /* Lisää sisäistä tilaa */
 }
 .col-sm-4 p {
   margin-top: 0;
@@ -93,112 +94,112 @@ p {
   border-radius: 5px; /* Pyöristetyt kulmat (valinnainen) */
 }
 body {
-    background-color: #2f4e6e; /* Vaihda haluamaksesi */
-    color: #333; /* Tumma teksti */
-    font-size: 1.1rem; /* Lisää luettavuutta */
-    
+  background-color: #2f4e6e; /* Vaihda haluamaksesi */
+  color: #333; /* Tumma teksti */
+  font-size: 1.1rem; /* Lisää luettavuutta */
 }
-
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 th {
-    background-color: #2f2f2f;
+  background-color: #2f2f2f;
 }
 
 label {
-    font-weight: bold;
+  font-weight: bold;
 }
-input[type="text"], input[type="email"] {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
- h1 {
-    
-    text-align: center; /* Kohdistaa tekstin keskelle vaakasuunnassa */
-    flex-grow: 1; /* Vie jäljellä olevan tilan */
-    padding: 10px; /* Lisää tilaa ylhäältä ja alhaalta */
-  }
-  h1, h2, h3 {
+h1 {
+  text-align: center; /* Kohdistaa tekstin keskelle vaakasuunnassa */
+  flex-grow: 1; /* Vie jäljellä olevan tilan */
+  padding: 10px; /* Lisää tilaa ylhäältä ja alhaalta */
+}
+h1,
+h2,
+h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-h1, h5 {
+h1,
+h5 {
   color: #003366; /* Tumma sininen otsikoille */
-  font-family: 'Roboto', sans-serif; /* Käytä yhtenäistä fonttia */
+  font-family: "Roboto", sans-serif; /* Käytä yhtenäistä fonttia */
   margin-bottom: 20px; /* Lisää väliä otsikoiden alle */
 }
 a {
   color: #ff6600; /* Oranssi linkeille */
 }
-  
-  .centered-text {
-    text-align: center; /* Keskittää tekstin vaakasuunnassa */
-    position: relative; /* Tarvitaan alleviivauksen sijoittamiseksi */
-    padding: 20px; /* Lisää tilaa ylhäältä ja alhaalta */
-  }
-  
-  .centered-text p {
-    font-size: 20px; /* Tekstin koko */
-    margin: 0; /* Poistaa ylimääräiset marginaalit */
-    padding-bottom: 20px; /* Lisää tilaa tekstin ja alleviivauksen väliin */;
-  }
-  .centered-text p::after {
-    content: ""; /* Luo "näkymättömän" elementin */
-    display: block; /* Tekee siitä rivin ylle tulevan elementin */
-    width: 60%; /* Alleviivauksen leveys (voit muuttaa tätä) */
-    height: 2px; /* Alleviivauksen korkeus */
-    background-color: black; /* Alleviivauksen väri */
-    margin: 0 auto 10px; /* Keskittää alleviivauksen */
-  }
-  
-  .centered-text::after {
-    content: ""; /* Luo "näkymättömän" elementin */
-    display: block; /* Tekee siitä rivin alle tulevan elementin */
-    width: 60%; /* Alleviivauksen leveys (voit muuttaa tätä) */
-    height: 2px; /* Alleviivauksen korkeus */
-    background-color: black; /* Alleviivauksen väri */
-    margin: -20px auto 0; /* Keskittää alleviivauksen */
-  }
-  .custom-navbar {
-    background-color: #343a40; /* Tumma tausta */
-  }
+
+.centered-text {
+  text-align: center; /* Keskittää tekstin vaakasuunnassa */
+  position: relative; /* Tarvitaan alleviivauksen sijoittamiseksi */
+  padding: 20px; /* Lisää tilaa ylhäältä ja alhaalta */
+}
+
+.centered-text p {
+  font-size: 20px; /* Tekstin koko */
+  margin: 0; /* Poistaa ylimääräiset marginaalit */
+  padding-bottom: 20px; /* Lisää tilaa tekstin ja alleviivauksen väliin */
+}
+.centered-text p::after {
+  content: ""; /* Luo "näkymättömän" elementin */
+  display: block; /* Tekee siitä rivin ylle tulevan elementin */
+  width: 60%; /* Alleviivauksen leveys (voit muuttaa tätä) */
+  height: 2px; /* Alleviivauksen korkeus */
+  background-color: black; /* Alleviivauksen väri */
+  margin: 0 auto 10px; /* Keskittää alleviivauksen */
+}
+
+.centered-text::after {
+  content: ""; /* Luo "näkymättömän" elementin */
+  display: block; /* Tekee siitä rivin alle tulevan elementin */
+  width: 60%; /* Alleviivauksen leveys (voit muuttaa tätä) */
+  height: 2px; /* Alleviivauksen korkeus */
+  background-color: black; /* Alleviivauksen väri */
+  margin: -20px auto 0; /* Keskittää alleviivauksen */
+}
+.custom-navbar {
+  background-color: #7e7f80; /* Tumma tausta */
+}
 .container px-4 text-center {
-    padding: 2px;
-    text-align: center;
+  padding: 2px;
+  text-align: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
 }
 
-  
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  
-  .col {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-  }
- 
-  .card-body {
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.card-body {
   flex-grow: 1; /* Sallii sisällön venyä */
   display: flex;
   flex-direction: column;
@@ -207,46 +208,46 @@ nav a {
   object-fit: cover;
   height: 200px; /* Rajoittaa kuvan korkeutta */
 }
-  .card img {
-    width: 100%;
-    max-width: 100%; /* Korjattu: kuva ei saa ylittää kortin leveyttä */
-    height: auto; /* Korjattu: kuva ei saa ylittää kortin korkeutta */
-    margin: 0 auto; /* Keskittää kuvan vaakasuunnassa */
-    object-fit: cover; /* Täyttää kortin ilman vääristymistä */
-  }
-  @media (max-width: 576px) {
+.card img {
+  width: 100%;
+  max-width: 100%; /* Korjattu: kuva ei saa ylittää kortin leveyttä */
+  height: auto; /* Korjattu: kuva ei saa ylittää kortin korkeutta */
+  margin: 0 auto; /* Keskittää kuvan vaakasuunnassa */
+  object-fit: cover; /* Täyttää kortin ilman vääristymistä */
+}
+@media (max-width: 576px) {
   .card {
     margin-bottom: 20px;
     margin-left: 0; /* Poistaa ylimääräisen marginaalin mobiilinäytöillä */
     margin-right: 0; /* Poistaa ylimääräisen marginaalin mobiilinäytöillä */
   }
 }
-  
-  .card {
-    position: relative;
-    overflow: hidden; /* Piilottaa ylimenevän sisällön */
-    max-width: 600px; /* Korjattu: kortin leveys ei saa ylittää 300px */
-    max-height: 600px; /* Korjattu: kortin korkeus ei saa ylittää 300px */
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px; /* Pyöristetyt kulmat */
+
+.card {
+  position: relative;
+  overflow: hidden; /* Piilottaa ylimenevän sisällön */
+  max-width: 600px; /* Korjattu: kortin leveys ei saa ylittää 300px */
+  max-height: 600px; /* Korjattu: kortin korkeus ei saa ylittää 300px */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; /* Pyöristetyt kulmat */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Varjo */
   margin-left: 100px; /* Keskittää kortin vaakasuunnassa */
   margin-right: 0; /* Keskittää kortin vaakasuunnassa */
-  }
-  
-  .card-title {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
+}
 
-  .card-text {
-    font-size: 0.9rem;
-    color: rgb(248, 245, 245); /* Muuta tekstin väri valkoiseksi */
-    height: 100%; /* Varmistaa, että teksti ei ylitä kortin korkeutta */
-  }
+.card-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
 
-  @media (max-width: 576px) {
+.card-text {
+  font-size: 0.9rem;
+  color: rgb(248, 245, 245); /* Muuta tekstin väri valkoiseksi */
+  height: 100%; /* Varmistaa, että teksti ei ylitä kortin korkeutta */
+}
+
+@media (max-width: 576px) {
   .card-text {
     font-size: 0.9rem; /* Pienempi fonttikoko mobiilinäytöille */
   }
@@ -266,9 +267,9 @@ nav a {
 }
 
 .small-card-img {
-  width: 50%;      /* pienempi leveys */
-  height: 100px;    /* säilyttää kuvasuhteen */
-  margin: 0 auto;  /* keskittää kuvan kortissa */
+  width: 50%; /* pienempi leveys */
+  height: 100px; /* säilyttää kuvasuhteen */
+  margin: 0 auto; /* keskittää kuvan kortissa */
   display: block;
 }
 .btn {
@@ -281,39 +282,37 @@ nav a {
     padding: 0.4rem 0.8rem; /* Pienemmät marginaalit */
   }
 }
- 
-  .card-img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Läpinäkyvä tausta tekstille */
-  }
-  
-  .card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Läpinäkyvä tausta tekstille */
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 .btn:hover {
   background-color: #0056b3; /* Tummempi sävy hover-tilassa */
   transform: scale(1.05); /* Suurentaa hieman */
   transition: all 0.3s ease; /* Lisää animaatio */
 }
 
-
 .card:hover {
   transform: scale(1.05); /* Suurentaa korttia hieman hover-tilassa */
   transition: transform 0.3s ease;
 }
-  
-  .inner-div {
-    width: 100%;
-    max-width: 100%; /* Korjattu: sisä-div ei saa ylittää kortin leveyttä */
-  }
 
+.inner-div {
+  width: 100%;
+  max-width: 100%; /* Korjattu: sisä-div ei saa ylittää kortin leveyttä */
+}
 
 /* Otsikon väri */
 .carousel-caption h5 {
@@ -395,7 +394,3 @@ ul {
     height: 200px; /* Rajoita karusellin kuvien korkeutta mobiilinäytöillä */
   }
 }
-
-
-
-
