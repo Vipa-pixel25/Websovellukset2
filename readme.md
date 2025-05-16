@@ -12,4 +12,6 @@ WS05_Responsive_Design
 
 WS06_Bootstrap
 
+WS07-Omat_Sivut2
+
 Nämä tehtävät on tehty
