@@ -231,19 +231,30 @@ nav a {
   margin-left: 200px; /* Keskittää kortin vaakasuunnassa */
   margin-right: 0; /* Keskittää kortin vaakasuunnassa */
   }
+  
   .card-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
+
   .card-text {
     font-size: 0.9rem;
     color: white; /* Muuta tekstin väri valkoiseksi */
     height: 100%; /* Varmistaa, että teksti ei ylitä kortin korkeutta */
   }
+
   @media (max-width: 576px) {
   .card-text {
     font-size: 0.9rem; /* Pienempi fonttikoko mobiilinäytöille */
   }
+}
+
+.custom-card .card-text {
+  color: #ff6600; /* Oranssi teksti */
+}
+
+.custom-card .card-title {
+  color: #00ff00; /* Vihreä otsikko */
 }
 .btn {
   font-size: 0.8rem; /* Oletuskoko */
